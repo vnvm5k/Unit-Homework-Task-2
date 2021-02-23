@@ -23,3 +23,8 @@ test('sort3', () => {
   const result = arraySort(array);
   expect(result[2]).toEqual({ name: 'мечник', health: 10 });
 });
+
+test('sort4', () => {
+  const result = arraySort(array);
+  expect(result[1]).not.toBe({ name: 'лучник', health: 80 });
+});
